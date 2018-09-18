@@ -1,10 +1,13 @@
 import React, {Component} from 'react'
-
+import background from '../images/slider_1.jpg'
+var style = {
+    backgroundImage: `url(${background})` 
+}
 class HomepageHeroBanner extends Component{
     render(){
         return(
             <div>
-                <div className="main_slider">
+                <div className="main_slider" style={style}>
                     <div className="container fill_height">
                         <div className="row align-items-center fill_height">
                             <div className="col">

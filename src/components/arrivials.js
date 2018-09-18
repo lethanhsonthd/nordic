@@ -45,9 +45,11 @@ class Arrivial extends Component {
         salePriceProduct={ObjectProduct.salePriceProduct}/>
     }
     showProduct = () =>{
-        for (var i=0; i<arrayOfProductObject.length; i++){
-            this.oneProduct(arrayOfProductObject[i])       
-        }
+        return (
+            <div>
+              {arrayOfProductObject.map(product => this.oneProduct(product))}
+            </div>
+          )
     }
     render(){
         return (
@@ -76,8 +78,8 @@ class Arrivial extends Component {
                         <div className="row">
                             <div className="col">
                                 <div className="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
+                                    {this.showProduct()}
                                 </div>
-                                {this.showProduct()}		
                             </div>
                         </div>
                     </div>
