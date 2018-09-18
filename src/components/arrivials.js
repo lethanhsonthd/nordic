@@ -41,7 +41,8 @@ class Arrivial extends Component {
         idProduct={ObjectProduct.idProduct} 
         nameProduct={ObjectProduct.nameOfProduct} 
         isNew ={ObjectProduct.isNewProduct}
-        priceProduct={ObjectProduct.priceProduct} 
+        priceProduct={ObjectProduct.priceProduct}
+        saleProduct ={ObjectProduct.saleProduct} 
         salePriceProduct={ObjectProduct.salePriceProduct}/>
     }
     showProduct = () =>{
